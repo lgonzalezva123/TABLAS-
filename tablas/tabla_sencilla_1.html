@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla sencilla 1</title>
+    <style type="text/css">
+        table {
+            width: 600px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        .bold {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th colspan="3">
+              Titulo de la Tabla
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Tabla Avanzada</th>
+                <th colspan="2">Cabecera Múltiples Columnas</th>
+            </tr>
+            <tr>
+                <th>Primera Col. Cab.</th>
+                <th>Segunda Col. Cab.</th>
+            </tr>
+            <tr>
+                <td class="bold">Fila 1</td>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+            </tr>
+            <tr>
+                <td class="bold">Fila 2</td>
+                <td>Fila 2 columna 1</td>
+                <td>Fila 2 Columna 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Pie de tabla.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
